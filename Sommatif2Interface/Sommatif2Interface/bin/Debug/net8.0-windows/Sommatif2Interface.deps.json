@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Sommatif2Interface/1.0.0": {
+        "runtime": {
+          "Sommatif2Interface.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Sommatif2Interface/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

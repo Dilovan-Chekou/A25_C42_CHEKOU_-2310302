@@ -1,0 +1,108 @@
+﻿<Window x:Class="Sommatif2Interface.View.CalculateurIMC"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sommatif2Interface.View"
+        mc:Ignorable="d"
+  
+        SizeToContent="WidthAndHeight"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+
+        Title="CalculateurIMC" Height="auto" Width="auto">
+    
+    <!--<WrapPanel Orientation="Vertical">
+        --><!--1er rubrique--><!--
+        <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label>Poids (kg) :</Label>
+            <TextBox x:Name="valeurPoids" BorderBrush="Black" GotFocus="TextBox_GotFocus" Width="50" Margin="5"></TextBox>
+        </WrapPanel>
+
+        --><!--2eme rubrique--><!--
+        <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label>Taille(m) :</Label>
+            <TextBox x:Name="valeurTaille" BorderBrush="Black" Width="50" Margin="5"></TextBox>
+        </WrapPanel>
+
+        --><!--3eme rubrique--><!--
+        <WrapPanel Orientation="Horizontal">
+            <Grid >
+                <Image Source="https://static.wikia.nocookie.net/marvel-rivals/images/d/de/Jeff_the_Land_Shark_Hero_Portrait.png/revision/latest?cb=20240819162642" Width="70" Height="auto"/>
+            </Grid>
+
+            <WrapPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <WrapPanel Orientation="Horizontal">
+                    <Label>IMC :</Label>
+                    <TextBlock x:Name="resultasIMC"></TextBlock>
+                </WrapPanel>
+
+                <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Label>Categorie :</Label>
+                    <TextBlock x:Name="categorie"></TextBlock>
+                </WrapPanel>
+            </WrapPanel>
+        </WrapPanel>
+
+        --><!--4eme rubrique--><!--
+        <Grid Margin="10">
+            <Button Click="btnCalculerIMC_Click">Calculer l'imc</Button>
+        </Grid>
+
+    </WrapPanel>-->
+
+
+
+
+
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://img.freepik.com/vecteurs-premium/ocean-dur-grandes-vagues-mer-dessin-espaces-oceaniques-mer-ondulee-belle-ocean-pacifique-fait-rage-grandes-fortes-vagues-bleues-vagues-ocean-dechainees-dans-mer-bleue_315087-6.jpg"
+                    Stretch="UniformToFill"/>
+        </Grid.Background>
+
+        <WrapPanel Orientation="Vertical" Margin="20">
+            <!--1er rubrique-->
+            <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Label FontSize="25">Poids (kg) :</Label>
+                <TextBox x:Name="valeurPoids" BorderBrush="Black" GotFocus="TextBox_GotFocus" FontSize="25" Margin="5"/>
+            </WrapPanel>
+
+            <!--2eme rubrique-->
+            <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Label FontSize="25">Taille(m) :</Label>
+                <TextBox x:Name="valeurTaille" BorderBrush="Black" Width="50" Margin="5" FontSize="25"/>
+            </WrapPanel>
+
+            <!--3eme rubrique-->
+            <WrapPanel Orientation="Horizontal">
+                <Grid>
+                    <Image Source="https://static.wikia.nocookie.net/marvel-rivals/images/d/de/Jeff_the_Land_Shark_Hero_Portrait.png/revision/latest?cb=20240819162642" Width="200"/>
+                </Grid>
+
+                <WrapPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <WrapPanel Orientation="Horizontal">
+                        <Label FontSize="25">IMC :</Label>
+                        <TextBlock x:Name="resultasIMC" FontSize="25"/>
+                    </WrapPanel>
+
+                    <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Label FontSize="25">Categorie :</Label>
+                        <TextBlock x:Name="categorie" FontSize="25"/>
+                    </WrapPanel>
+                </WrapPanel>
+            </WrapPanel>
+
+            <!--4eme rubrique-->
+            <Grid Margin="10">
+                <Button Click="btnCalculerIMC_Click" FontSize="25">Calculer l'imc</Button>
+            </Grid>
+        </WrapPanel>
+    </Grid>
+
+
+
+
+
+</Window>
